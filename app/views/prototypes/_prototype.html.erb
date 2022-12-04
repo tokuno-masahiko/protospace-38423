@@ -1,5 +1,5 @@
 <div class="card">
-<%# image_tagはshowアクションと違ってなぜ表示されるのか imageはどこから渡されているのか%>
+
   <%= link_to image_tag(prototype.image),prototype_path(prototype.id), class: :card__img %>
   <div class="card__body">
     <%= link_to prototype.title, prototype_path(prototype.id), method: :get, class: :card__title%>
