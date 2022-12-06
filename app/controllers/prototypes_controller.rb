@@ -4,6 +4,7 @@ class PrototypesController < ApplicationController
    before_action :move_to_index, only: :edit
 
   def index
+    # @prototype = Prototype.find(params[:id])
     @prototypes = Prototype.all
   end
 #saveの後ろにparamsを記述はなぜだめ？
